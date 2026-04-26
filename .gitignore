@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+src-tauri/target/
+
+# Build output (keep dist for releases if needed, but ignore in dev)
+# dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tauri
+src-tauri/target/
+
+# Release binaries
+releases/
+
+# But keep the bundle output for GitHub releases
+!src-tauri/target/release/bundle/
