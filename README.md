@@ -49,9 +49,33 @@ A lightweight, cross-platform visual Markdown editor — lightweight, powerful, 
 | Platform | Status |
 |----------|--------|
 | 🐧 Linux | 🔜 **Próximamente** |
-| 🍎 macOS | 🔜 **Próximamente** |
+| 🍎 macOS | ✅ **Soporte técnico disponible** |
 
-> ¿Querés ayudar? LibreMD está construido con Tauri v2 que soporta cross-platform. Si tenés Linux o Mac, compilá y mandá un PR. ¡Se agradece!
+> **Nota:** El binario para macOS aún no está publicado. Para usarlo, compilá localmente o esperá al próximo release.
+
+### Cómo compilar en macOS
+
+```bash
+# Instalar dependencias
+npm install
+
+# Compilar para producción
+npm run tauri build
+
+# El binario se generará en:
+# src-tauri/target/release/bundle/macos/LibreMD.app
+```
+
+Para ejecutar la app compilada:
+```bash
+open src-tauri/target/release/bundle/macos/LibreMD.app
+```
+
+O instalar con:
+```bash
+# Crear DMG
+npm run tauri build -- --bundles dmg
+```
 
 ## Usage
 
@@ -95,7 +119,8 @@ When you insert or drag & drop an image, LibreMD:
 
 - [Node.js](https://nodejs.org/) (v18+)
 - [Rust](https://rustup.rs/) (latest stable)
-- Windows: [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/) with C++ workload
+- **Windows:** [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/) with C++ workload
+- **macOS:** Xcode Command Line Tools (`xcode-select --install`)
 
 ### Setup
 
@@ -142,7 +167,9 @@ libreMD/
 - [x] v0.1.0 — Export HTML/PDF
 - [x] v0.1.0 — Table editor
 - [x] v0.1.0 — Image insertion
-- [ ] v0.2.0 — Linux & macOS builds
+- [x] v0.1.1 — macOS support (configuración técnica)
+- [ ] v0.2.0 — Linux builds
+- [ ] v0.2.0 — Linux & macOS binaries publicados
 - [ ] v0.2.0 — Image support in native PDF export
 - [ ] v0.2.0 — Plugin system
 - [ ] v0.3.0 — Collaborative editing
