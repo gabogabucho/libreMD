@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "tauri:build": "tauri build",
+    "icons:build": "node scripts/build_icon.mjs",
+    "icons:regen": "node scripts/regenerate_icons.mjs"
   },
   "keywords": [
     "markdown",
