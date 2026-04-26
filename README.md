@@ -42,7 +42,12 @@ A lightweight, cross-platform visual Markdown editor — lightweight, powerful, 
 
 ### Linux & macOS
 
-> Linux and macOS binaries are planned. The app is built with Tauri v2 which supports cross-platform builds. Contributors welcome!
+| Platform | Status |
+|----------|--------|
+| 🐧 Linux | 🔜 **Próximamente** |
+| 🍎 macOS | 🔜 **Próximamente** |
+
+> ¿Querés ayudar? LibreMD está construido con Tauri v2 que soporta cross-platform. Si tenés Linux o Mac, compilá y mandá un PR. ¡Se agradece!
 
 ## Usage
 
