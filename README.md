@@ -26,9 +26,13 @@ A lightweight, cross-platform visual Markdown editor — lightweight, powerful, 
 
 ![Light Theme](screenshots/editor-light.png)
 
+### Sepia Theme
+
+![Sepia Theme](screenshots/editor-sepia.png)
+
 ### Visual Table Editor
 
-![Table Editor](screenshots/table-editor.png)
+![Table Editor](screenshots/table-editor-new.png)
 
 ## Download
 
