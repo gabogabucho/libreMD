@@ -19,11 +19,7 @@ Thumbs.db
 *.swp
 *.swo
 
-# Tauri
-src-tauri/target/
-
 # Release binaries
 releases/
 
-# But keep the bundle output for GitHub releases
-!src-tauri/target/release/bundle/
+dist/
